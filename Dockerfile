@@ -10,7 +10,8 @@ RUN apk update && apk --no-cache add \
   g++ \
   make \
   libffi-dev \
-  openssl-dev
+  openssl-dev \
+  zip
 
 RUN npm install -g aws-cdk
 RUN pip3 install aws-cdk.core
