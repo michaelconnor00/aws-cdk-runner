@@ -5,7 +5,7 @@ RUN npm install -g aws-cdk
 RUN pip3 install aws-cdk.core
 
 COPY entrypoint.sh /entrypoint.sh
-RUN ["chmod", "+x", "/entrypoint.sh"]
+ENTRYPOINT ["chmod", "+x", "/entrypoint.sh"]
 RUN ["/entrypoint.sh"]
 
 # FROM ubuntu:20.04
