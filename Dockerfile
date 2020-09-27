@@ -13,9 +13,5 @@ RUN apk update && apk --no-cache add \
   openssl-dev \
   zip
 
-RUN npm install -g aws-cdk
+RUN npm install -g aws-cdk@1.64.0
 RUN pip3 install aws-cdk.core
-
-# COPY entrypoint.sh /entrypoint.sh
-# RUN ["chmod", "+x", "/entrypoint.sh"]
-# ENTRYPOINT ["/entrypoint.sh"]
