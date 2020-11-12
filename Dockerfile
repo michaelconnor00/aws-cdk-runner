@@ -13,5 +13,5 @@ RUN apk update && apk --no-cache add \
   openssl-dev \
   zip
 
-RUN npm install -g aws-cdk@1.65.0
+RUN npm install -g aws-cdk@1.73.0
 RUN pip3 install aws-cdk.core
